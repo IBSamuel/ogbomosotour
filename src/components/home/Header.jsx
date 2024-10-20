@@ -34,6 +34,11 @@ const Header = () => {
           </div>
         </div>
       </section>
+      <img 
+  className="w-full h-36 object-cover" 
+  src="https://img.freepik.com/free-vector/zebra-fabric-maze_1409-8913.jpg?t=st=1729440422~exp=1729444022~hmac=ec0b4075447cf2c9713950ca22b1a446d659d9e5780f553a0333906b85dd22c9&w=900" 
+  alt="" 
+/>
     </>
   );
 };
