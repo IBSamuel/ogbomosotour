@@ -6,10 +6,26 @@ const Gridsystem = () => {
     <section className='bg-black'>
         
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-10 mx-10">
-    <div class="grid gap-4">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-10 mx-10">
+    <div class="">
         <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""/>
+        <div className="relative w-80 h-[450px] bg-black rounded-3xl overflow-hidden shadow-lg text-white">
+      {/* Background Image */}
+      <img 
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" 
+        alt="Hisma Desert"
+        layout="fill"
+        objectFit="cover"
+        className="bg-black h-auto max-w-full  opacity-100 rounded-3xl"
+      />
+
+      {/* Overlay Content */}
+      <div className="absolute top-6 left-6 z-10">
+        <h1 className="text-2xl font-bold">Hisma Desert</h1>
+        <p className="text-sm mt-2">The Hisma desert is a true marvel of nature, and several desert oases.</p>
+      </div>
+
+    </div>
         </div>
         <div>
             <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""/>
@@ -52,7 +68,10 @@ const Gridsystem = () => {
         </div>
     </div>
 </div>
-
+  {/* "See More" Link */}
+  <div className="text-end me-6">
+        <a href="#" className="text-white underline">See More</a>
+      </div>
     </section>
     </>
   )

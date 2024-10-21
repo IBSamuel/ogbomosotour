@@ -1,5 +1,6 @@
 import Footer from '@/components/home/Footer'
 import Header from '@/components/home/Header'
+import Carousel from '@/components/home/Main/Carousel'
 import Destinations from '@/components/home/Main/Destinations'
 import Gridsystem from '@/components/home/Main/Gridsystem'
 import Someparts from '@/components/home/Main/Someparts'
@@ -16,7 +17,9 @@ const page = () => {
     <Destinations/>
     <Gridsystem/>
     <Someparts/>
+    <Carousel/>
     <Footer/>
+    
 
     </>
   )
