@@ -6,22 +6,22 @@ import { IoMdArrowForward } from "react-icons/io";
 const Carousel = () => {
   const images = [
     {
-      src: '/carousel-1.png',
+      src: '/carousel-3.png',
       alt: 'Explore Saudi Arabia 1',
       text: { heading: "Explore", subheading: "Ògbómọ̀ṣọ́" }
     },
     {
-      src: '/carousel-1.png',
+      src: '/carousel-2.png',
       alt: 'Explore Saudi Arabia 2',
       text: { heading: "Discover", subheading: "The Kingdom" }
     },
     {
-      src: '/carousel-1.png',
+      src: '/carousel-4.png',
       alt: 'Explore Saudi Arabia 3',
       text: { heading: "Adventure", subheading: "Awaits" }
     },
     {
-      src: '/carousel-1.png',
+      src: '/carousel-5.png',
       alt: 'Explore Saudi Arabia 4',
       text: { heading: "Uncover", subheading: "Mysteries" }
     },

@@ -6,7 +6,7 @@ const Someparts = () => {
     <div className="relative w-full h-screen">
       {/* Background Image */}
       <Image 
-        src="/desert.svg" 
+        src="/Soun_of_Ogbomosho_palace.jpg" 
         alt="Desert" 
         layout="fill" 
         objectFit="cover" 
@@ -18,14 +18,16 @@ const Someparts = () => {
 
       {/* Text Overlay */}
       <div className="absolute bottom-10 left-10 z-20 text-white">
-        <h1 className="text-5xl">Hisma</h1>
-        <h2 className="text-6xl font-bold">Desert</h2>
+        <h1 className="text-5xl">Ogbomoso</h1>
+        <h2 className="text-6xl font-bold">Palace</h2>
       </div>
 
       {/* Profile Image */}
       <div className="absolute bottom-10 right-10 z-20 flex items-center space-x-3">
-        <img
-          src="https://imgs.search.brave.com/R0Y9au5OtW-TL-7pzFqv6H-0CdiaAWhzOu28doLWH3s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2M2L2U1/LzVlL2M2ZTU1ZTEx/OGMwMDQ0YTFmMmQ1/ZmU3NmY2NmNiZjhm/LmpwZw" 
+        <Image
+        width={100}
+        height={100}
+          src="/desert.svg" 
           alt="Wazeem Al Malik" 
           className="rounded-full w-10"
         />
@@ -41,9 +43,7 @@ const Someparts = () => {
       </div>
     </div>
     <p className="text-white px-10">
-          The Hisma Desert in Saudi Arabia is a realm of ethereal beauty that captivates the senses. Its vast
-          expanse of golden sand dunes, sculpted by the winds of time, creates a mesmerizing landscape that
-          stretches as far as the eye can see. As the sun sets, painting the sky with vivid hues.
+    Ogbomoso's rolling hills and ancient rock formations offer a stunning natural beauty. As the sun sets, the landscape is bathed in warm golden light, painting the sky with vibrant colors.
         </p>
         
     </section>

@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -40,19 +41,19 @@ const Navbar = () => {
           <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
             <ul className="flex flex-col p-4 md:p-0 mt-4 bg-gray-800 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
               <li>
-                <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 " aria-current="page">
-                  Destinations
-                </a>
+                <Link href="/home" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 " aria-current="page">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-whiterounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
-                  Members
-                </a>
+                <Link href="/about" className="block py-2 px-3 text-whiterounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
+                  About
+                </Link>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">
+                <Link href="/gallery" className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">
                   Gallery
-                </a>
+                </Link>
               </li>
 
 

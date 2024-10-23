@@ -1,80 +1,163 @@
+import Image from 'next/image'
 import React from 'react'
+import exploreImage from "/public/Soun_of_Ogbomosho_palace.jpg";
 
-const Gridsystem = () => {
+const Gallery = () => {
   return (
     <>
-    <section className='bg-black'>
-        
+      <section className='bg-black text-white pb-14'>
+       
+      </section>
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-10 mx-10">
-    <div class="">
-        <div>
-        <div className="relative w-80 h-[450px] bg-black rounded-3xl overflow-hidden shadow-lg text-white">
-      {/* Background Image */}
-      <img 
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" 
-        alt="Hisma Desert"
-        layout="fill"
-        objectFit="cover"
-        className="bg-black h-auto max-w-full  opacity-100 rounded-3xl"
-      />
+      <section className='bg-black'>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mx-10 pt-10">
+          <div className='grid gap-2'>
+            <div>
+              {/* Adjust the size of the image to match the intended display size */}
+              <Image
+                width={700}  
+                height={600} 
+                className="h-auto max-w-full rounded-3xl"
+                src={exploreImage}
+                alt="Soun of Ogbomosho Palace"
+              />
+            </div>
+            <div>
+              <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image2.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image3.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image6.jpg"
+                alt=""
+              />
+            </div>
+          </div>
 
-      {/* Overlay Content */}
-      <div className="absolute top-6 left-6 z-10">
-        <h1 className="text-2xl font-bold">Hisma Desert</h1>
-        <p className="text-sm mt-2">The Hisma desert is a true marvel of nature, and several desert oases.</p>
-      </div>
+          <div className="grid gap-4">
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={1000}  
+                height={800} 
+                src="/image8.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image9.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image11.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image12.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image10.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className='grid gap-2'>
+            <div>
+              {/* Adjust the size of the image to match the intended display size */}
+              <Image
+                width={700}  
+                height={600} 
+                className="h-auto max-w-full rounded-3xl"
+                src="/image16.jpg"
+                alt="Soun of Ogbomosho Palace"
+              />
+            </div>
+            <div>
+              <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image13.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image18.jpg_Large"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image5.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+            <Image
+                className="h-auto max-w-full rounded-3xl"
+                width={700}  
+                height={600} 
+                src="/image17.jpeg"
+                alt=""
+              />
+            </div>
+          
+            
+          </div>
 
-    </div>
         </div>
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""/>
+
+        {/* "See More" Link */}
+        <div className="text-end me-6">
+          <a href="#" className="text-white underline">See More</a>
         </div>
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""/>
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""/>
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt=""/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt=""/>
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt=""/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt=""/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt=""/>
-        </div>
-    </div>
-</div>
-  {/* "See More" Link */}
-  <div className="text-end me-6">
-        <a href="#" className="text-white underline">See More</a>
-      </div>
-    </section>
+      </section>
     </>
   )
 }
 
-export default Gridsystem
+export default Gallery;
